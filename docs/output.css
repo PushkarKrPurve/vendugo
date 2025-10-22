@@ -596,6 +596,11 @@
       padding-inline: calc(var(--spacing) * 0);
     }
   }
+  .md\:px-1 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 1);
+    }
+  }
   .md\:px-6 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 6);
@@ -611,9 +616,24 @@
       padding-inline: calc(var(--spacing) * 10);
     }
   }
+  .md\:px-12 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 12);
+    }
+  }
+  .md\:px-16 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 16);
+    }
+  }
   .md\:px-20 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:px-100 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 100);
     }
   }
   .md\:py-2 {
