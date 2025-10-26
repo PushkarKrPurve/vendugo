@@ -4,4 +4,22 @@
     --font-roboto: "Roboto", sans-serif;
     --font-leckerli : "Leckerli One", cursive;
     --color-acent: #ff8a00;
+    --animate-next1 : next1 1s ease-in forwards;
+    /* --animate-next2 : next2 1s ease-in forwards;
+    @keyframes next1 {
+        from{
+            left: 0%;
+        }
+        to{
+            left: -100%;
+        }
+    }
+    @keyframes next2 {
+        from{
+            left: 100%;
+        }
+        to{
+            left: 0%;
+        }
+    } */
 }

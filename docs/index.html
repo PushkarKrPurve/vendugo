@@ -5,12 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>VENDUGO</title>
 </head>
 <body class="uppercase font-roboto overflow-x-hidden text-[14px] md:text-[16px]">
-    <header class="bg-[url(images/hero.png)] bg-cover bg-center w-screen min-h-screen">
-        <nav class="px-2 py-2 text-white flex flex-col justify-between md:flex-row md:px-10 md:py-4">
+    <header class="w-screen min-h-screen relative">
+        <div id="hero-images" class="w-full min-h-screen relative overflow-hidden">
+            <img class="w-full h-full absolute duration-1000" src="images/hero 5.jpg" alt="">
+            <img class="w-full h-full absolute duration-1000" src="images/image 3.png" alt="">
+            <img class="w-full h-full absolute duration-1000" src="images/image 2.png" alt="">
+            <img class="w-full h-full absolute duration-1000" src="images/hero.png" alt="">
+        </div>
+        <div id="scroll-bar" class="absolute flex flex-col items-center top-1/2 right-12 -translate-y-1/2">
+            <span class="prev cursor-pointer text-3xl text-white px-2 rounded-md hover:bg-neutral-400 duration-200 -rotate-90 inline-block">&#10095</span>
+            <div>
+                <div class="dots w-2.5 h-2.5 bg-acent border border-neutral-500 rounded-[50%] my-1 "></div>
+                <div class="dots w-2.5 h-2.5 bg-neutral-200 border border-neutral-500 rounded-[50%] my-1"></div>
+                <div class="dots w-2.5 h-2.5 bg-neutral-200 border border-neutral-500 rounded-[50%] my-1"></div>
+                <div class="dots w-2.5 h-2.5 bg-neutral-200 border border-neutral-500 rounded-[50%] my-1"></div>
+            </div>
+            <span class="next cursor-pointer text-3xl text-white px-2 rounded-md hover:bg-neutral-400 duration-200 rotate-90 inline-block">&#10095</span>
+        </div>
+        <nav class="px-2 py-2 text-white absolute top-0 w-full flex flex-col justify-between md:flex-row md:px-10 md:py-4">
             <h2 class="text-xl font-semibold tracking-wide text-center">Vendugo</h2>
             <ul class="flex justify-between mt-2">
                 <li><a class=" hover:text-acent active:text-acent duration-200 md:px-6" href="#">contact us</a></li>
@@ -28,7 +44,6 @@
         </div>
 
         <div class="absolute border-t-2 border-acent bottom-0 right-0 w-6/10 mr-4 md:w-35/100 md:mr-12">
-
             <p class="text-white text-end py-4 md:py-8">TOYOTA HILUX</p>
         </div>
 
@@ -36,11 +51,14 @@
 
     <main class="bg-[#0e0e0e] text-white">
         <section class="relative">
+            <!-- bg-[url('/img/top-left.png'),url('/img/top-right.png'),url('/img/bottom-left.png'),url('/img/bottom-right.png')]
+[background-position:1rem_2rem,calc(100%-5rem)_2rem,1rem_calc(100%-5rem),calc(100%-5rem)_calc(100%-5rem)] bg-no-repeat -->
             
-                <!-- <h1 class="text-[9rem] [text-stroke:2px_white] text-transparent [-webkit-text-stroke:2px_#ff8a00] whitespace-nowrap rotate-90 tracking-wider  absolute h-100 top-100 left-50 font-bold">BEDLAM INC.</h1> -->
+                <!-- <h1 id="text" class="text-[9rem] [text-stroke:2px_white] text-transparent whitespace-nowrap rotate-90 tracking-wider  absolute h-100 top-100 left-50 font-bold">BEDLAM INC.</h1> -->
+                 <!-- <img class="absolute right-8 top-12" src="images/BEDLAM-INC-rotated.png" alt=""> -->
             
             <div class="flex flex-col gap-4 md:flex-row px-4 py-8 md:pt-16 md:pb-4 md:items-center">
-                <div class="md:w-5/10 md:pl-10 md:pr-24">
+                <div class="md:w-5/10  md:pl-10 md:pr-24">
                     <h2 class="text-2xl text-acent font-medium">high-quality all-terrain vehicles with an emphasis on performance</h2>
                 </div>
                 <div class="md:w-5/10 md:pl-20 pr-10">
@@ -94,12 +112,18 @@
 
             <div class="bg-black opacity-70 relative">
                 <img class="md:h-150 w-full" src="images/hero 2.png" alt="">
-                <div class="absolute bottom-4 left-1/2 -translate-x-1/2">
-                    <input class="" type="radio" name="active-image" id="">
-                    <input class="" type="radio" name="active-image" id="">
-                    <input class="" type="radio" name="active-image" id="">
-                    <input class="" type="radio" name="active-image" id="">
+
+                <div class="absolute flex items-center gap-2 bottom-12 left-1/2 -translate-x-1/2">
+                    <span class="prev text-white px-2 rounded-md hover:bg-neutral-400 duration-200 rotate-180 inline-block">&#10095</span>
+                    <div>
+                        <div class="dots w-2.5 h-2.5 inline-block bg-acent border border-neutral-500 rounded-[50%] "></div>
+                        <div class="dots w-2.5 h-2.5 inline-block bg-neutral-200 border border-neutral-500 rounded-[50%] "></div>
+                        <div class="dots w-2.5 h-2.5 inline-block bg-neutral-200 border border-neutral-500 rounded-[50%] "></div>
+                        <div class="dots w-2.5 h-2.5 inline-block bg-neutral-200 border border-neutral-500 rounded-[50%] "></div>
+                    </div>
+                    <span class="next text-white px-2 rounded-md hover:bg-neutral-400 duration-200 inline-block">&#10095</span>
                 </div>
+
             </div>
 
              <div class="flex flex-col gap-4 md:flex-row px-4 py-8 md:pt-20 md:pb-12 md:items-center">
@@ -130,10 +154,10 @@
 
                     <div class="py-4 md:py-12">
                         <p>folllow us on</p>
-                        <a href="#"><img class="w-8 inline" src="images/Platform=Instagram, Shape=Original, Colored=False.png" alt=""></a>
-                        <a href="#"><img class="w-8 inline" src="images/Google - Negative.png" alt=""></a>
-                        <a href="#"><img class="w-8 inline" src="images/YouTube - Negative.png" alt=""></a>
-                        <a href="#"><img class="w-8 inline" src="images/Apple - Negative.png" alt=""></a>
+                        <a href="#"><img class="w-8 inline" src="images/insta-logo.png" alt=""></a>
+                        <a href="#"><img class="w-8 inline" src="images/google-logo.png" alt=""></a>
+                        <a href="#"><img class="w-8 inline" src="images/yt-logo.png" alt=""></a>
+                        <a href="#"><img class="w-8 inline" src="images/apple-logo.png" alt=""></a>
                     </div>
 
                 </div>
