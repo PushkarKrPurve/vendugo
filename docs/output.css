@@ -37,7 +37,6 @@
     --default-mono-font-family: var(--font-mono);
     --font-roboto: "Roboto", sans-serif;
     --color-acent: #ff8a00;
-    --animate-next1: next1 1s ease-in forwards;
   }
 }
 @layer base {
@@ -242,24 +241,6 @@
   .left-\[100\%\] {
     left: 100%;
   }
-  .container {
-    width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
-  }
   .mx-4 {
     margin-inline: calc(var(--spacing) * 4);
   }
@@ -435,6 +416,12 @@
   .bg-\[\#0e0e0e\] {
     background-color: #0e0e0e;
   }
+  .bg-\[url\(\'images\/BEDLAM-INC\.png\'\)\,\] {
+    background-color: url('images/BEDLAM-INC.png'),;
+  }
+  .bg-\[url\] {
+    background-color: url;
+  }
   .bg-acent {
     background-color: var(--color-acent);
   }
@@ -444,17 +431,167 @@
   .bg-neutral-200 {
     background-color: var(--color-neutral-200);
   }
-  .bg-neutral-400 {
-    background-color: var(--color-neutral-400);
+  .bg-neutral-500 {
+    background-color: var(--color-neutral-500);
   }
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'\'\)\] {
+    background-image: url('');
+  }
   .bg-\[url\(\'\/img\/top-left\.png\'\)\,url\(\'\/img\/top-right\.png\'\)\,url\(\'\/img\/bottom-left\.png\'\)\,url\(\'\/img\/bottom-right\.png\'\)\] {
     background-image: url('/img/top-left.png'),url('/img/top-right.png'),url('/img/bottom-left.png'),url('/img/bottom-right.png');
   }
+  .bg-\[url\(\'im\'\)\,url\(\'\/img\/top-right\.png\'\)\,url\(\'\/img\/bottom-left\.png\'\)\,url\(\'\/img\/bottom-right\.png\'\)\] {
+    background-image: url('im'),url('/img/top-right.png'),url('/img/bottom-left.png'),url('/img/bottom-right.png');
+  }
+  .bg-\[url\(\'ima\'\)\,url\(\'\/img\/top-right\.png\'\)\,url\(\'\/img\/bottom-left\.png\'\)\,url\(\'\/img\/bottom-right\.png\'\)\] {
+    background-image: url('ima'),url('/img/top-right.png'),url('/img/bottom-left.png'),url('/img/bottom-right.png');
+  }
+  .bg-\[url\(\'images\/\'\)\] {
+    background-image: url('images/');
+  }
+  .bg-\[url\(\'images\/BEDLAM\'\)\] {
+    background-image: url('images/BEDLAM');
+  }
+  .bg-\[url\(\'images\/BEDLAM-INC\'\)\] {
+    background-image: url('images/BEDLAM-INC');
+  }
+  .bg-\[url\(\'images\/BEDLAM-INC\.PNG\'\)\] {
+    background-image: url('images/BEDLAM-INC.PNG');
+  }
+  .bg-\[url\(\'images\/BEDLAM-INC\.png\'\)\,url\(\'images\/BEDLAM-INC\.png\'\)\,url\(\'images\/BEDLAM-INC\.png\'\)\,url\(\'images\/BEDLAM-INC\.png\'\)\,url\(\'images\/BEDLAM-INC\.png\'\)\] {
+    background-image: url('images/BEDLAM-INC.png'),url('images/BEDLAM-INC.png'),url('images/BEDLAM-INC.png'),url('images/BEDLAM-INC.png'),url('images/BEDLAM-INC.png');
+  }
+  .bg-\[url\(\'images\/BEDLAM-INC\.png\'\)\] {
+    background-image: url('images/BEDLAM-INC.png');
+  }
+  .bg-\[url\(\)\] {
+    background-image: url();
+  }
+  .bg-clip-text {
+    background-clip: text;
+  }
+  .\[background-position\:1rem\] {
+    background-position: 1rem;
+  }
   .\[background-position\:1rem_2rem\,calc\(100\%-5rem\)_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
     background-position: 1rem 2rem,calc(100% - 5rem) 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .\[background-position\:1rem_2rem\,calc\(100\%_-_5rem\)_2rem\,1rem_calc\(100\%_-_5rem\)\,calc\(100\%_-_5rem\)_calc\(100\%_-_5rem\)\] {
+    background-position: 1rem 2rem,calc(100% - 5rem) 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .\[background-position\:1rem_2rem\] {
+    background-position: 1rem 2rem;
+  }
+  .bg-position-\[1rem_0rem\,calc\(100\%-5rem\)_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 1rem 0rem,calc(100% - 5rem) 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[1rem_2rem\,calc\(100\%-5rem\)_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 1rem 2rem,calc(100% - 5rem) 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[1rem_2rem\] {
+    background-position: 1rem 2rem;
+  }
+  .bg-position-\[1rem_10rem\,calc\(100\%-5rem\)_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 1rem 10rem,calc(100% - 5rem) 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[1rem_30rem\,calc\(100\%-5rem\)_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 1rem 30rem,calc(100% - 5rem) 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[1rem_35rem\,calc\(100\%-5rem\)_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 1rem 35rem,calc(100% - 5rem) 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[1rem_40rem\,calc\(100\%-5rem\)_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 1rem 40rem,calc(100% - 5rem) 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[1rem_50rem\,10_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 1rem 50rem,10 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[1rem_50rem\,100rem_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 1rem 50rem,100rem 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[1rem_50rem\,_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 1rem 50rem, 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[1rem_50rem\,calc\(100\%-1rem\)_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 1rem 50rem,calc(100% - 1rem) 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[1rem_50rem\,calc\(100\%-2rem\)_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 1rem 50rem,calc(100% - 2rem) 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[1rem_50rem\,calc\(100\%-5rem\)_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 1rem 50rem,calc(100% - 5rem) 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[1rem_rem\,calc\(100\%-5rem\)_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 1rem rem,calc(100% - 5rem) 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_45rem\,calc\(100\%-2rem\)_10rem\,2rem_10rem\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem 45rem,calc(100% - 2rem) 10rem,2rem 10rem,calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_45rem\,calc\(100\%-2rem\)_10rem\,2rem_100rem\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem 45rem,calc(100% - 2rem) 10rem,2rem 100rem,calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_45rem\,calc\(100\%-2rem\)_10rem\,2rem_150rem\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem 45rem,calc(100% - 2rem) 10rem,2rem 150rem,calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_45rem\,calc\(100\%-2rem\)_10rem\,2rem_200rem\,calc\(100\%-2rem\)0rem\] {
+    background-position: 2rem 45rem,calc(100% - 2rem) 10rem,2rem 200rem,calc(100% - 2rem)0rem;
+  }
+  .bg-position-\[2rem_45rem\,calc\(100\%-2rem\)_10rem\,2rem_200rem\,calc\(100\%-2rem\)_50rem\] {
+    background-position: 2rem 45rem,calc(100% - 2rem) 10rem,2rem 200rem,calc(100% - 2rem) 50rem;
+  }
+  .bg-position-\[2rem_45rem\,calc\(100\%-2rem\)_10rem\,2rem_200rem\,calc\(100\%-2rem\)_70rem\] {
+    background-position: 2rem 45rem,calc(100% - 2rem) 10rem,2rem 200rem,calc(100% - 2rem) 70rem;
+  }
+  .bg-position-\[2rem_45rem\,calc\(100\%-2rem\)_10rem\,2rem_200rem\,calc\(100\%-2rem\)_85rem\] {
+    background-position: 2rem 45rem,calc(100% - 2rem) 10rem,2rem 200rem,calc(100% - 2rem) 85rem;
+  }
+  .bg-position-\[2rem_45rem\,calc\(100\%-2rem\)_10rem\,2rem_200rem\,calc\(100\%-2rem\)_90rem\] {
+    background-position: 2rem 45rem,calc(100% - 2rem) 10rem,2rem 200rem,calc(100% - 2rem) 90rem;
+  }
+  .bg-position-\[2rem_45rem\,calc\(100\%-2rem\)_10rem\,2rem_200rem\,calc\(100\%-2rem\)_\] {
+    background-position: 2rem 45rem,calc(100% - 2rem) 10rem,2rem 200rem,calc(100% - 2rem) ;
+  }
+  .bg-position-\[2rem_45rem\,calc\(100\%-2rem\)_10rem\,2rem_200rem\,calc\(100\%-2rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem 45rem,calc(100% - 2rem) 10rem,2rem 200rem,calc(100% - 2rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_45rem\,calc\(100\%-2rem\)_10rem\,2rem_200rem\,calc\(100\%-2rem\)_rem\] {
+    background-position: 2rem 45rem,calc(100% - 2rem) 10rem,2rem 200rem,calc(100% - 2rem) rem;
+  }
+  .bg-position-\[2rem_45rem\,calc\(100\%-2rem\)_10rem\,2rem_200rem\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem 45rem,calc(100% - 2rem) 10rem,2rem 200rem,calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_45rem\,calc\(100\%-2rem\)_10rem\,2rem_20050rem\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem 45rem,calc(100% - 2rem) 10rem,2rem 20050rem,calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_50rem\,calc\(100\%-2rem\)_2rem\,1rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem 50rem,calc(100% - 2rem) 2rem,1rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_50rem\,calc\(100\%-2rem\)_2rem\,2rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem 50rem,calc(100% - 2rem) 2rem,2rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_50rem\,calc\(100\%-2rem\)_10rem\,2rem_\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem 50rem,calc(100% - 2rem) 10rem,2rem ,calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_50rem\,calc\(100\%-2rem\)_10rem\,2rem_55\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem 50rem,calc(100% - 2rem) 10rem,2rem 55,calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_50rem\,calc\(100\%-2rem\)_10rem\,2rem_55rem\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem 50rem,calc(100% - 2rem) 10rem,2rem 55rem,calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_50rem\,calc\(100\%-2rem\)_10rem\,2rem_100rem\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem 50rem,calc(100% - 2rem) 10rem,2rem 100rem,calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_50rem\,calc\(100\%-2rem\)_10rem\,2rem_calc\(100\%-5rem\)\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem 50rem,calc(100% - 2rem) 10rem,2rem calc(100% - 5rem),calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_50rem\,calc\(100\%-2rem\)_10rem\,2rem_rem\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem 50rem,calc(100% - 2rem) 10rem,2rem rem,calc(100% - 5rem) calc(100% - 5rem);
+  }
+  .bg-position-\[2rem_rem\,calc\(100\%-2rem\)_10rem\,2rem_100rem\,calc\(100\%-5rem\)_calc\(100\%-5rem\)\] {
+    background-position: 2rem rem,calc(100% - 2rem) 10rem,2rem 100rem,calc(100% - 5rem) calc(100% - 5rem);
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
@@ -557,6 +694,9 @@
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
   }
+  .text-clip {
+    text-overflow: clip;
+  }
   .whitespace-nowrap {
     white-space: nowrap;
   }
@@ -584,6 +724,10 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .duration-150 {
+    --tw-duration: 150ms;
+    transition-duration: 150ms;
   }
   .duration-200 {
     --tw-duration: 200ms;
@@ -625,6 +769,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-acent);
+      }
+    }
+  }
+  .hover\:text-neutral-400 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-neutral-400);
       }
     }
   }
